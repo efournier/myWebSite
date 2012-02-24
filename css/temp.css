@@ -1,0 +1,183 @@
+/* Reset.css */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+/* End reset */
+
+
+
+body { 
+	margin:0px;
+	color: #333;
+	font: 16px/28px Georgia, 'Times New Roman', Times, serif;
+	
+	/* CSS3 gradient background pattern @credits http://leaverou.me/demos/css3-patterns.html */
+	background-color: #eee; /* Change this to change both stribe colors */
+	
+	background-image: -webkit-gradient(linear, 0 100%, 100% 0,
+							color-stop(.25, rgba(255, 255, 255, .2)), color-stop(.25, transparent),
+							color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .2)),
+							color-stop(.75, rgba(255, 255, 255, .2)), color-stop(.75, transparent),
+							to(transparent)); /* Old webkit syntax */
+	background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+							transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+							transparent 75%, transparent); /* New webkit syntax */					
+	background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+							transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+							transparent 75%, transparent); /* Firefox */
+	background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+							transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+							transparent 75%, transparent); /* Opera */
+	background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+							transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+							transparent 75%, transparent); /* WC3 */
+	background-size: 16px 16px;
+}
+
+a {
+	color: #6C8C72;
+	text-decoration: none;
+	-webkit-transition: all 100ms linear;
+	/*-moz-transition: all 100ms linear;*/
+	transition: all 100ms linear;
+}
+
+a:hover {
+	color: #5D8565;
+	text-shadow: 0 1px 0 #fff;
+}
+
+a:active { outline: none; }
+
+h1 {
+	font-size: 32px;
+	letter-spacing: -1px;
+}
+
+h2 {display: block;
+	font-size: 28px;
+	letter-spacing: -1px;
+}
+h3 {
+	font-size: 26px;
+	letter-spacing: -1px;
+}
+
+#wrapper {
+	
+   width: 1100px;
+   height: 600px;
+   position: absolute;
+   left: 40%;
+   top: 50%;
+   margin-left: -150px;
+   margin-top: -300px;
+}
+
+#contact{
+			position:absolute;
+			left:10%;
+			top:50%;
+			
+}
+
+.presentation a {
+	color: #518F5E;
+	font: bold 66px 'Arial Unicode MS', sans-serif;
+	float: left;
+	letter-spacing: -3px;
+	text-shadow: 0 1px 0 #fff;
+	-webkit-transition: all 200ms linear;
+	-moz-transition: all 200ms linear;
+	transition: all 200ms linear;
+	
+	/* Gain the benefits from GPU acceleration */
+	-webkit-transform: translateZ(0);
+	/*-moz-transform: translateZ(0);*/
+	transform: translateZ(0);
+}
+
+
+.presentation a:hover {
+	background: none;
+	text-shadow: 0 1px 0 #fff;
+	color: #438C52;
+	/* Scale the site title on hover */
+	-webkit-transform: scale(1.2) translateZ(0);
+	/*-moz-transform: scale(1.1) translateZ(0);*/
+	transform: scale(1.8) translateZ(0);
+}
+
+#menu {
+	margin: 0 0 60px 20px;
+}
+
+#menu ul {
+	list-style: none;
+}
+
+#menu li {
+	float: left;
+	margin: 0 20px 0 0;
+	position: relative;
+}
+
+#menu a {
+	background: #6C8C72;
+	background: -moz-linear-gradient(top, #f3f3f3 0%, #ececec 100%); /* FF 3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3f3f3), color-stop(100%,#ececec)); /* Chrome, Safari 4+ */
+	background: -webkit-linear-gradient(top, #f3f3f3 0%,#ececec 100%); /* Chrome 10+, Safari 5.1+ */
+	background: -o-linear-gradient(top, #f3f3f3 0%,#ececec 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #f3f3f3 0%,#ececec 100%); /* IE10+ */
+	background: linear-gradient(top, #f3f3f3 0%,#ececec 100%); /* W3C */
+	
+	
+	border-color: #fff #c9c9c9 #c9c9c9 #fff;
+	border-radius: 5px;
+	display: block;
+	font: 14px 'verdana', sans-serif;
+	/*padding: 14px 20px;*/
+	margin-bottom: 5px;
+	text-shadow: 0 2px 0 #fff;
+}
+
+#menu a:active {
+	-webkit-box-shadow: inset 1px 1px 5px #ccc;
+	-moz-box-shadow: inset 1px 1px 5px #ccc;	
+	box-shadow: inset 1px 1px 5px #ccc;	
+}
+
+#menu a:hover {
+	color: #AC0649;
+	/*border-color: #c9c9c9 #fff #fff #c9c9c9;*/
+	border-radius: 12px 12px 12px 12px;
+	opacity: 0.75;
+}
+
+img{
+	margin: 0;
+	padding:0;
+	width: 35px;
+	height: 35px;
+}
